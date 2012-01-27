@@ -1,0 +1,10 @@
+<h1>Family Matters!</h1>
+
+<ul>
+  <% @allfamilys.each do | x | %>
+  <li><%= link_to x.name, "families/#{x.id}" %></li>
+    <% end %>
+
+<ul>
+  
+<p><%= link_to "Register Now!", "/families/new" %></p>
